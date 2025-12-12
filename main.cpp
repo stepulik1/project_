@@ -7,6 +7,11 @@ void readLinesFromFile(const std::string& filename, std::vector<std::string>& li
 }
 
 void printLinesToScreen(const std::vector<std::string>& lines) {
+    std::cout << "\nВывод данных на экран: " << std::endl;
+    
+    for (const auto& str : lines) {
+        std::cout << str << std::endl;
+    }
 }
 
 void writeLinesToFile(const std::string& filename, const std::vector<std::string>& lines) {
