@@ -46,9 +46,9 @@ void writeLinesToFile(const std::string& filename, const std::vector<std::string
 
 int main() {
     std::vector<std::string> myLines;
-    readLinesFromFile("input.txt", myLines);
+    readLinesFromFile("C:\\Users\\home\\Desktop\\func2_3\\input.txt", myLines);
     printLinesToScreen(myLines);
-    writeLinesToFile("output.txt", myLines);
+    writeLinesToFile("C:\\Users\\home\\Desktop\\func2_3\\output.txt", myLines);
 
     return 0;
 }
