@@ -15,6 +15,19 @@ void printLinesToScreen(const std::vector<std::string>& lines) {
 }
 
 void writeLinesToFile(const std::string& filename, const std::vector<std::string>& lines) {
+    std::ofstream file(filename);
+
+    if (!file.is_open()) {
+        std::cerr << "Ошибка: Не удалось создать файл " << filename << std::endl;
+        return;
+    }
+
+    for (const auto& str : lines) {
+        file << str << std::endl;
+    }
+
+    file.close();
+    std::cout << "\nДанные успешно записаны в файл " << filename << std::endl;
 }
 
 int main() {
